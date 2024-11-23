@@ -13,3 +13,28 @@ The Quiz app demo utilizes HTML, CSS and JS to collectively structure, style and
 - Questioning: You will be given 5questions, each with a 15 second timer. Upons cliking the answer, it will be verified as either right or wrong. The "Next Que" button will take you to the next question.
 
 - After the last question is answered, you can click "Replay quiz" to take the quiz again or "Quit Quiz" to return to the home page.
+
+## Codebase
+
+The codebase is seperated into files isolating each language.
+
+- The idex.html file is at root level in  order for Pages to properly host  the application.
+
+- The JS folder contains all pertinent logical code for the questions themselves as well as the functions that manage the user input.
+
+- The CSS file is  responsible for styling all pages of the website.
+
+- Note: the JS and CSS files are implemented in an external fashion, so the link  and script tags are used to connect the external files to the index.html file.
+
+## File Relevancy
+
+- index.html: The index file is responsible for the content structuring  of the website. iIt provides the content for  each  aspect of the website including the Quiz outline.
+
+- quizApp.js: This file is responsibel for brining in all html elements and storing them as variables to be used for app functionality.
+
+- questions.js: This file contains an array of js objects in which each onject has the attributes: numb, question, answer, and options (another array that has the options for the answers to the question).
+
+    ### Functions in quizApp.js
+
+    - showQuestions: Pulls data from the questions.js file and  is responsible for showing the questions at each attribute
+    
